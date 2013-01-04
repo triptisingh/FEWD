@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Google</title>	
-	<link rel="shortcut icon" href="favicon.ico" />
-		
-	<meta name="author" content="tripti">
-	<link rel="stylesheet" href="stylesheet.css"/>
-	<!-- Date: 2012-12-27 -->
+	<title>Google</title>
+	
+	<link rel="stylesheet" href="stylesheet.css" />	
 </head>
+
 <body>
-	<div id="container">
-		<header>
-			<ul id="header">
+
+	<div id="wrapper">
+		
+		<div id="header">
+			<ul>
 				<li><a href="#">+You</a></li>
 				<li><a href="#">Search</a></li>
 				<li><a href="#">Images</a></li>
@@ -26,34 +25,36 @@
 				<li><a href="#">Calendar</a></li>
 				<li><a href="#">More</a></li>		
 			</ul>
+		</div><!-- #header -->
 		
-		</header>
-	
-		<div id="signin">
-			<form>
-				<input class="submit" type="submit" value="Sign in">
-			</form>
-		</div>
+		<div id="content">
+			<div id="signin">
+				<form>
+					<input class="submit" type="submit" value="Sign in">
+				</form>
+			</div>
+			<div id="img"><img src="google.png"/></div>
+			<div id="center">
+				<form>
+					<input type="text" name="search" id="search">
+					<input type="submit" value="Google Search" class="submit" id="submitbutton" >
+					<input type="submit" value="I'm Feeling Lucky" class="submit">
+				</form>
+			</div>
+		</div><!-- #content -->
 		
-		<div id="center">
-			<img src="google.png"/>
-			<form>
-				<input type="text" name="search" id="search">
-				<input type="submit" value="Google Search" class="submit" id="submitbutton" >
-				<input type="submit" value="I'm Feeling Lucky" class="submit">
-			</form>
-		</div>
-
-	
-		<footer>
-			<ul id="footer">
-				<li><a href="#">About Google</a></li>
-				<li><a href="#">+Google</a></li>
+		<div id="footer">
+			<ul>
+				<li><a href="#">Advertising Programs</a></li>
+				<li><a href="#">Business Solutions</a></li>	
 				<li><a href="#">Privacy & Terms</a></li>
-				<li><a href="#">Business Solutions</a></li>		
-				<li><a href="#">Advertising Programs</a></li>					
+				<li><a href="#">+Google</a></li>
+				<li><a href="#">About Google</a></li>						
 			</ul>
-		</footer>
-	</div>
+		</div><!-- #footer -->
+		
+	</div><!-- #wrapper -->
+	
 </body>
+
 </html>

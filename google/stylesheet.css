@@ -3,25 +3,34 @@
 	padding:0;	
 }
 
+html,
 body {
-	font-family:Arial, sans-serif;
-	font-size:13px;	
-	overflow-y:scroll;
+	margin:0;
+	padding:0;
+	height:100%;
 }
 
-ul li {
+#wrapper {
+	overflow-y:scroll;
+	min-height:100%;
+	position:relative;
+	font-family:Arial, sans-serif;
+	font-size:13px;
+}
+
+#header {
+	width:100%;
+	background:#2d2d2d;
+	padding:8px 0 8px 0;
+}
+
+#header ul li {
 	display:inline-block;
 	list-style-type:none;
-	padding:8px;	
+	padding-left:10px;
 }
 
-header {
-	width:100%;
-	float:left;
-	background-color:#2d2d2d;
-}
-
-header ul li a {
+#header ul li a {
 	text-decoration:none;
 	font-weight:bold;
 	color:#C0C0C0;
@@ -37,46 +46,64 @@ header ul li a {
 	padding:5px 10px 5px 10px;
 }
 
-#signin{
-	position:absolute;
-	top:8%;
-	right:3%;
-}
-
-#center {
-	width:300px;
-	margin:auto;
-	padding:200px;
+#content {
+	padding-bottom:100px; /* Height of the footer element */
 	text-align:center;
 }
 
+#signin{
+	width:30px;
+	position:absolute;
+	top:50px;
+	right:45px;
+}
+
+#img{
+	width:500px;
+	margin-left:400px;
+	margin-top:180px;
+}
+
+#center{
+	width:500px;
+	margin-left:400px;
+	margin-top:10px;
+}
+
 #search{
-	margin:0 0 0 -100px;
 	width:500px;
 	height:20px;
 }
 
 #submitbutton {
 	display:inline-block;
-	margin: 10px 10px 0px -10px;
+	margin: 10px 10px 0px 0px;
 }
 
-footer {
+#footer {
 	width:100%;
+	height:40px;
 	position:absolute;
-	bottom:0px;
+	bottom:0;
+	left:0;
 	border-top:1px solid #DDD;
 }
 
-footer ul li {
+#footer ul {
 	float:right;
 }
 
-footer li a {
+#footer ul li {
+	display:inline-block;
+	list-style-type:none;
+	padding:5px 10px 5px 10px;	
+}
+
+#footer li a {
 	text-decoration:none;
 	color:#808080;
 }
 
-footer li a:hover {
+#footer li a:hover {
 	text-decoration:underline;
 }
